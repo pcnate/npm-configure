@@ -40,7 +40,7 @@ if grep -Fq ".npm-global" ~/.profile; then
 else
   echo -e "Adding to PATH variable in ~/.profile"
 
-  echo -e "\nPATH=\$PATH:~/.npm-global/bin" >> ~/.profile
+  echo -e "\nexport PATH=\$PATH:~/.npm-global/bin" >> ~/.profile
 
   echo -e "Reloading ~/.profile"
   source ~/.profile
