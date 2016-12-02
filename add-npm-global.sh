@@ -35,15 +35,15 @@ else
 fi;
 
 echo -e -n "Checking if PATH already has ~/.npm-global/bin\t"
-if grep -Fq ".npm-global" ~/.profile; then
+if grep -F ".npm-global" ~/.bashrc; then
   echo "Yes - skipping"
 else
   echo -e "Adding to PATH variable in ~/.profile"
 
-  echo -e "\nexport PATH=\$PATH:~/.npm-global/bin" >> ~/.profile
+  echo -e "\nPATH=\$PATH:~/.npm-global/bin" >> ~/.bashrc
 
   echo -e "Reloading ~/.profile"
-  source ~/.profile
+  source ~/.bashrc
 fi;
 
 echo -e "\nSetting npm prefix"
