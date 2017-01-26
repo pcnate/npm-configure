@@ -7,3 +7,4 @@ run this bash script to configure your npm to avoid permission problems
 
 Tested on
 * raspbian
+* Ubuntu 16.04
