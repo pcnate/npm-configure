@@ -8,3 +8,5 @@ run this bash script to configure your npm to avoid permission problems
 Tested on
 * raspbian
 * Ubuntu 16.04
+* Ubuntu 18.04 LTS
+* Pop!_OS 18.04 LTS
